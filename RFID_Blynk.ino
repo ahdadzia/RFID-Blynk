@@ -5,9 +5,9 @@
 #include <BlynkSimpleEsp8266.h>
 #include <MFRC522.h>
 
-char auth[] = "9ntV_TqtX5LaFwX7yfsQcL3sz_Mex4vV";
-char ssid[] = "MBAHMUKIPER";
-char pass[] = "ahhayas20";
+char auth[] = "Your Auth Token";
+char ssid[] = "Your Wifi";
+char pass[] = "Your Password";
 
 #define SDA_PIN D2
 #define RST_PIN D1
@@ -56,7 +56,7 @@ void loop()
   Serial.print("Message : ");
   content.toUpperCase();  
     
-  if(content.substring(1) == "B9 9F AE B3") // UID kartu nya silahkan cocokan dengan kartu masing"
+  if(content.substring(1) == "B9 9F AE B3") // UID kartu nya silahkan cocokan dengan kartu masing masing
           {
             lcd.clear();
             lcd.print(0, 0, "Valid card");                                              // Print if card is TRUE
